@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <button id="button-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <div class="main">
+    <h1>Dictionary App</h1>
+
+    <div class="card">
+        <div class="container">
+            <h2>Search for word</h2>
+                <div class="input">
+                    <input type="text" id="input"/>
+                    <button onclick="getData()">
+                        <i class='bx bx-search'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="word-info">
+    <h3 id="word"></h3>
+    <p id="phonetics"></p>
+    <br><br><br>
+    <h3>Definition</h3>
+    <p id="definition"></p>
+    <br><br><br>
+    <h3>Example</h3>
+    <p id="example"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

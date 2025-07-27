@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', Courier, monospace;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    padding: 10px;
+}
+
+header button{
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.word-info{
+    margin-bottom: 8rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20%;
+    border: none;
+    width: 40%;
+    margin-left: 36rem;
+    background-color: rgb(241, 241, 241);
+    border-radius: 15px;
+}
+
+.card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container input{
+    width: 100%;
+
+}
+
+.word-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input{
+    display: flex;
+    width: 15rem;
+    gap: 10px;
+}
+
+.input input{
+    padding: 6px;
+    transition: 0.1s all ease;
+}
+
+.input button{
+    width: 20%;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.input input:focus {
+    outline: 1px solid black;
+}
+
+.dark-mode{
+    background-color: rgb(26, 26, 26);
+    color: white;
+}
+
+.button-darkmode{
+    background-color: white;
+    color: black;
+}
+
+.card-darkmode{
+    border: 1px solid white;
+    background: none;
+}
+
+.input-darkmode {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    border: 1px solid white;
+}
+
+.button-darkmode {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+@media (max-width: 768px) {
+    .main {
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .input {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input input,
+    .input button {
+        width: 100%;
+    }
+
+    .word-info {
+        margin-bottom: 4rem;
+    }
+
+    header {
+        text-align: center;
+    }
+}
